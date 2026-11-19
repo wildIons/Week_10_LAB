@@ -4,10 +4,16 @@
 		<title>Data taker!</title>
 		<script>
 			function getData1(){
-				let txt1 = document.getElementById("dataBox1");
-				let txt2 = document.getElementById("dataBox2");
-				let txt3 = document.getElementById("dataBox3");
-				alert(txt1.value + " " + txt2.value + " " + txt3.value);
+				let txt1 = document.getElementById("dataBox1").value;
+				let txt2 = document.getElementById("dataBox2").value;
+				let txt3 = document.getElementById("dataBox3").value;
+				
+				if(txt3 >= 17){
+				alert("You are eligible for a drivers license!");
+				}
+				else{
+				alert("Oh noses, youre not able to drive yet");
+				}
 			}
 		</script>
 	</head>
