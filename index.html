@@ -3,17 +3,27 @@
 	<head>
 		<title>Data taker!</title>
 		<script>
-			function getData(){
-				let txt = document.getElementById("dataBox");
-				alert(txt.value);
+			function getData1(){
+				let txt1 = document.getElementById("dataBox1");
+				let txt2 = document.getElementById("dataBox2");
+				let txt3 = document.getElementById("dataBox3");
+				alert(txt1.value + " " + txt2.value + " " + txt3.value);
 			}
 		</script>
 	</head>
 	<body>
 		<form>
 			<label>Enter some data here:</label>
-			<input type="text" id="dataBox" placeholder="Enter something">
+			<input type="text" id="dataBox1" placeholder="Enter something">
 		</form>
-		<button type="button" onclick="getData()">Submit</button>
+		<form>
+			<label>Enter Name</label>
+			<input type="text" id="dataBox2" placeholder="Enter something">
+		</form>
+		<form>
+			<label>Enter Age</label>
+			<input type="text" id="dataBox3" placeholder="Enter something">
+		</form>
+		<button type="button" onclick="getData1()">Submit</button>
 	</body>
 </html>
