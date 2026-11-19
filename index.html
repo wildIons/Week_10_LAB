@@ -3,10 +3,17 @@
 	<head>
 		<title>Data taker!</title>
 		<script>
-			
+			function getData(){
+				let txt = document.getElementById("dataBox");
+				alert(txt.value);
+			}
 		</script>
 	</head>
 	<body>
-	
+		<form>
+			<label>Enter some data here:</label>
+			<input type="text" id="dataBox" placeholder="Enter something">
+		</form>
+		<button type="button" onclick="getData()">Submit</button>
 	</body>
 </html>
